@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    padding: 50px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 600px;
+    height: 600px;
+    border: 5px black solid;
+    background-color: grey;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.item{
+    border: red 10px solid;
+    background-color: lightcoral;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 150%;
+}
+
+.item1{
+    grid-area: 1 / 1 / 2 / 4;
+}
