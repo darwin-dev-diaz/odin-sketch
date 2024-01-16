@@ -6,10 +6,36 @@ body{
     align-items: center;
 }
 
+.user-section{
+    display: flex;
+    border: 10px black solid; 
+    border-radius: 4px;
+}
+.menu{
+    background-color: beige;
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-button{
+    padding: 20px;
+    border: black 5px solid;
+    border-radius: 15px;
+    background-color: darkgray;
+    font-size: 20px;
+}
+.size-selection{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
 .container{
     width: 600px;
     height: 600px;
-    border: 5px black solid;
     background-color: grey;
 
     display: grid;
@@ -39,8 +65,8 @@ body{
 
 .item{
     border: red 10px solid;
-    background-color: lightcoral;
     border-radius: 30px;
+    background-color: lightcoral;
 
     display: flex;
     align-items: center;
