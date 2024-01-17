@@ -1,8 +1,8 @@
 const grid = document.querySelector('.container');
 
 function resizeGrid(grid, sizeSelection){
-    const arr = [4,6,8,12,16];
-    const arr2 = ['fourGrid','sixGrid','eightGrid','twelveGrid','sixteenGrid'];
+    const arr = [4,6,8,12,16,24];
+    const arr2 = ['fourGrid','sixGrid','eightGrid','twelveGrid','sixteenGrid','twentyFourGrid'];
 
     const elementStartCount = grid.childElementCount;
     const increase = elementStartCount < arr[sizeSelection]**2 ? true : false;

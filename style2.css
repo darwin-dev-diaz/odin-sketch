@@ -21,14 +21,20 @@ body{
 }
 .menu-button{
     padding: 20px;
-    border: black 5px solid;
+    border: black 3px solid;
     border-radius: 15px;
     background-color: darkgray;
     font-size: 20px;
+    font-weight: 600;
+}
+.menu-button:hover{
+    background-color: grey;
+    cursor: pointer;
 }
 .size-selection{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 
 }
@@ -36,10 +42,10 @@ body{
 .container{
     width: 600px;
     height: 600px;
-    background-color: grey;
+    background-color: darkgray;
 
     display: grid;
-    grid-gap: 1px;
+    /* grid-gap: 1px; */
 }
 
 .fourGrid{
@@ -62,19 +68,11 @@ body{
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
 }
-
-.item{
-    border: red 10px solid;
-    border-radius: 30px;
-    background-color: lightcoral;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 150%;
+.twentyFourGrid{
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
 }
 
-.item1{
-    grid-area: 1 / 1 / 2 / 4;
+.item{
+    border: black 1px solid;
 }
