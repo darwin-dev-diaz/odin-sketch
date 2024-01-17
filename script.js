@@ -31,6 +31,7 @@ function resizeGrid(grid, sizeSelection) {
   grid.classList.remove(grid.classList[1]);
   grid.classList.add(arr2[sizeSelection]);
   addHoverability();
+  clearBoard();
 }
 
 const resizeButtons = document.querySelectorAll(".resize-button");
@@ -41,7 +42,7 @@ resizeButtons.forEach((currentValue, i) => {
 });
 
 function addHoverability() {
-const colorTo = "black";
+    const colorTo = "black";
 
   const gridItems = document.querySelectorAll(".item");
   gridItems.forEach((currentValue) => {
@@ -50,3 +51,13 @@ const colorTo = "black";
     });
   });
 }
+
+function clearBoard(){
+    const gridItems = document.querySelectorAll(".item");
+  gridItems.forEach((currentValue) => {
+    currentValue.style.backgroundColor = '';
+  });
+}
+
+const clearButton = document.querySelector('.clear-button');
+clearButton.addEventListener("click", clearBoard);
