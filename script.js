@@ -19,3 +19,11 @@ function resizeGrid(grid, sizeSelection){
     grid.classList.remove(grid.classList[1]);
     grid.classList.add(arr2[sizeSelection]);
 }
+
+const resizeButtons = document.querySelectorAll(".resize-button");
+resizeButtons.forEach((currentValue, i)=>{
+    currentValue.addEventListener("click", ()=>{
+        resizeGrid(grid, i);
+    });
+});
+
