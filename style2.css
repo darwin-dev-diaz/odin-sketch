@@ -1,18 +1,36 @@
+:root{
+    --mon-black: #272821;
+    --mon-red: #FB0170;
+    --mon-purple: #AD79F5;
+    --mon-blue: #13DCF2;
+    --mon-green: #94E400;
+    --mon-orange: #E78403;
+    --mon-yellow: #DED15E;
+    --mon-grey: #3E3D32;
+    --mon-white: #F8F8F1;
+}
+
 body{
     display: flex;
     padding: 50px;
+    font-family: 'Inconsolata';
+    color: var(--mon-white);
 
+    background-color: var(--mon-black);
     justify-content: center;
     align-items: center;
 }
 
+button{
+    color: var(--mon-white);
+}
+
 .user-section{
     display: flex;
-    border: 10px black solid; 
     border-radius: 4px;
 }
 .menu{
-    background-color: beige;
+    background-color: var(--mon-black);
     width: 300px;
     height: 600px;
     display: flex;
@@ -22,13 +40,13 @@ body{
 .menu-button{
     padding: 20px;
     border: black 3px solid;
-    border-radius: 15px;
-    background-color: darkgray;
+    border-radius: 5px;
+    background-color: var(--mon-grey);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bold;
+    font-family: inherit;
 }
 .menu-button:hover{
-    background-color: grey;
     cursor: pointer;
 }
 .size-selection,
@@ -37,16 +55,36 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+}
 
+.size-selection-title{
+    color: var(--mon-red);
+}
+.menu-button.resize-button:hover{
+    background-color: var(--mon-red);
+}
+
+.tools-title{
+    color: var(--mon-green);
+}
+.menu-button.clear-button:hover{
+    background-color: var(--mon-green);
+}
+.color-selection-title{
+    color: var(--mon-blue);
+}
+.menu-button.color-button:hover{
+    background-color: var(--mon-blue);
 }
 
 .container{
     width: 600px;
     height: 600px;
-    background-color: darkgray;
+    background-color: var(--mon-grey);
+    border: black solid 5px;
 
     display: grid;
-    /* grid-gap: 1px; */
+    grid-gap: .5px;
 }
 
 .fourGrid{
@@ -70,6 +108,10 @@ body{
     grid-template-rows: repeat(16, 1fr);
 }
 .twentyFourGrid{
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+}
+.sixtyFourGrid{
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: repeat(24, 1fr);
 }
