@@ -31,7 +31,8 @@ body{
     background-color: grey;
     cursor: pointer;
 }
-.size-selection{
+.size-selection,
+.color-selection{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
